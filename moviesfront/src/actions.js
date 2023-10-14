@@ -48,7 +48,7 @@ export const updateAction = async ({request, params}) => {
     }
 
     // send request to backend
-    await fetch(URL + id, {
+    await fetch(URL + `${id}/`, {
         method: "put",
         headers: {
             "Content-Type": "application/json"
@@ -57,7 +57,7 @@ export const updateAction = async ({request, params}) => {
     })
 
     // redirect back to show page page
-    return redirect(`/${id}`)
+    return redirect(`/${id}/`)
 }
 
 //deleteAction => delete a todo from form submissions to `/delete/:id`
@@ -66,7 +66,7 @@ export const deleteAction = async ({params}) => {
     const id = params.id
 
     // send request to backend
-    await fetch(URL + id, {
+    await fetch(URL + `${id}/`, {
         method: "delete",
     })
 

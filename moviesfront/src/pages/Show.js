@@ -23,12 +23,12 @@ const Show = () => {
       <h2>{movie.release}</h2>
       <div style={{ textAlign: "center" }}>
         <h2>Update the Movie</h2>
-        <Form action={`/update/${movie.id}`} method="post">
-          <input type="text" name="title" placeholder="write title here"/>
-          <input type="text" name="pgRating" placeholder="write the parental guidance rating here"/>
-          <input type="text" name="synopsis" placeholder="write a short synopsis here"/>
-          <input type="text" name="release" placeholder="write the release year here"/>
-          <input type="text" name="leadActor" placeholder="write the Lead Actor here"/>
+        <Form action={`/update/${movie.id}/`} method="post">
+          <input type="text" name="title" defaultValue={`${movie.title}`}/>
+          <input type="text" name="pgRating" defaultValue={`${movie.pgRating}`}/>
+          <input type="text" name="synopsis" defaultValue={`${movie.synopsis}`}/>
+          <input type="text" name="release" defaultValue={`${movie.release}`}/>
+          <input type="text" name="leadActor" defaultValue={`${movie.leadActor}`}/>
           <button>Update Movie</button>
         </Form>
         <Form action={`/delete/${movie.id}`} method="post">

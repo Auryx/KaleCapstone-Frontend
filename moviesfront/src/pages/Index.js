@@ -9,11 +9,11 @@ const Index = (props) => {
     <div style={{textAlign: "center"}}/>
     <h2>Add a Movie</h2>
     <Form action="/create" method="post">
-      <input type="text" name="title" placeholder="write title here"/>
-      <input type="text" name="pgRating" placeholder="write the parental guidance rating here"/>
-      <input type="text" name="synopsis" placeholder="write a short synopsis here"/>
-      <input type="text" name="release" placeholder="write the release year here"/>
-      <input type="text" name="leadActor" placeholder="write the Lead Actor here"/>
+      <input type="text" name="title" defaultValue="write title here"/>
+      <input type="text" name="pgRating" defaultValue="write the parental guidance rating here"/>
+      <input type="text" name="synopsis" defaultValue="write a short synopsis here"/>
+      <input type="text" name="release" defaultValue="write the release year here"/>
+      <input type="text" name="leadActor" defaultValue="write the Lead Actor here"/>
       <button>Add New Movie</button>
     </Form>
     {movies.map((post) => <Post post={post} key={post.id} />)}
