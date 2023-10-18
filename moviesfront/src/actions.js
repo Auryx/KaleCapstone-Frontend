@@ -1,7 +1,7 @@
 import { redirect } from "react-router-dom"
 
 // YOUR DEPLOYED API BASE URL
-const URL = "http://stormy-journey-78172-5e031ccea3dc.herokuapp.com/movies/"
+const URL = "https://stormy-journey-78172-5e031ccea3dc.herokuapp.com/movies/"
 
 //createAction => create a todo from form submissions to `/create`
 export const createAction = async ({request}) => {
