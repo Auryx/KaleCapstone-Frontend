@@ -9,6 +9,11 @@ This app is a very basic movie tracker that catalogs movies with a Django backen
 [**Backend**](https://stormy-journey-78172-5e031ccea3dc.herokuapp.com/movies/)
 [**Backend Github**](https://github.com/Auryx/KaleCapstone-Backend)
 
+### Technologies used
+- React (Frontend)
+- Django (Backend)
+- Docker (Deployment)
+
 ## Backend Endpoints
 | ENDPOINT | METHOD | PURPOSE |
 |----------|--------|---------|
