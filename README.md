@@ -1,9 +1,13 @@
 # KaleCapstone 
+By: Paul Bunda
 
-Welcome! I plan on using Docker to redo a version of Project 3 or 4. 
-## Project Idea
+## Movie Tracker
+This app is a very basic movie tracker that catalogs movies with a Django backend. The app will display a saved movie's title, lead actor, release date, parental guidance rating, and a short synopsis of said movie. The primary purpose of this app was to learn Docker, as seen in the Dockerfile. The app is deployed using a docker container and the Heroku CLI.  
 
-Current plan is to build a app that helps you track which movies you have and haven't seen, while providing info like Lead Actors, Release Date, and their Worldwide gross. If a better idea strikes me, I'll probably pivot, but this idea will do in a pinch. 
+### Links
+[**Deployment**](https://intense-forest-85466-8a4e6faec164.herokuapp.com/)
+[**Backend**](https://stormy-journey-78172-5e031ccea3dc.herokuapp.com/movies/)
+[**Backend Github**](https://github.com/Auryx/KaleCapstone-Backend)
 
 ## Backend Endpoints
 | ENDPOINT | METHOD | PURPOSE |
@@ -15,3 +19,17 @@ Current plan is to build a app that helps you track which movies you have and ha
 | /movies/:id | GET | Display a form to edit a designated existing movie |
 | /dice/update/:id | PUT | Update a designated movie's information then redirect to /movie |
 | /dice/delete/:id | DELETE | Delete a designated movie then redirect to /movie  |
+
+## ERD
+``` mermaid
+erDiagram
+    DiceSet {
+        id string 
+        title string
+        leadActor string
+        release string
+        pgRating string
+        synopsis string
+    }
+
+```
