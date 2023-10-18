@@ -33,3 +33,7 @@ erDiagram
     }
 
 ```
+## Future Improvements
+- Implement Auth
+- Revise object, add binary Watched, and sort index by obj
+- More styling
