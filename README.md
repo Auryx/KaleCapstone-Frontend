@@ -1,4 +1,4 @@
-# KaleCapstone 
+# MovieTracker 
 By: Paul Bunda
 
 ## Movie Tracker
